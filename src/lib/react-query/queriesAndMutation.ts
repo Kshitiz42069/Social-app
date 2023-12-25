@@ -155,19 +155,20 @@ export const useDeletePost = () =>{
     })
 }
 
-export const useGetPost = () => {
+export const useGetPosts = () => {
     return useInfiniteQuery({
         queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
-        queryFn: getInfinitePosts,
-        getNextPageParam: (lastpage) => {
-            if(lastpage && lastpage.documents.length===0) return null;
-
-            const lastId = lastpage.documents[lastpage?.documents.length-1].$id;
-
+        queryFn: getInfinitePosts as any,
+        initialPageParam: 0,
+        getNextPageParam: (lastPage: any) => {
+            if (lastPage && lastPage.documents.length === 0) {
+                return null;
+            }
+            const lastId = lastPage.documents[lastPage.documents.length - 1].$id;
             return lastId;
-        }
-    })
-}
+        },
+    });
+};
 
 export const useSearchPost = (searchTerm: string) => {
     return useQuery({
