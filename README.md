@@ -23,6 +23,8 @@ export default {
     tsconfigRootDir: __dirname,
   },
 }
+
+![image](https://github.com/Kshitiz42069/Social-app/assets/89392782/9183f54b-48e1-45b3-b463-86a995ed3a57)
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
