@@ -20,7 +20,7 @@ Welcome to our social media app repository! This project showcases the developme
 - Core functionalities, including post creation and user interaction
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript, Responsive Design
+- **Frontend:** HTML, CSS, TypeScript, Responsive Design
 - **Backend:** Appwrite (for efficient backend services)
 - **Additional Tools:** Real-time updates, data storage optimization
 
